@@ -1,0 +1,25 @@
+<table class="table">
+
+  <thead class="table-dark">
+    <tr>
+      <th>Id</th>
+      <th>Date</th>
+      <th>Total</th>
+      <th>Transaction Type</th>
+      <th>Notes</th>
+    </tr>
+  </thead>
+
+  <tbody>
+    <tr *ngFor="let tempTransaction of transactions">
+      <td>{{ tempTransaction.id }}</td>
+      <td>{{ tempTransaction.date }}</td>
+      <td>{{ tempTransaction.total | currency: 'PLN' }}</td>
+      <td>{{ tempTransaction.transactionType }}</td>
+      <td>{{ tempTransaction.notes }}</td>
+    </tr>
+  </tbody>
+
+</table>
+
+
