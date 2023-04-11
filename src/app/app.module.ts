@@ -3,8 +3,8 @@ import { BrowserModule } from '@angular/platform-browser';
 
 import { AppComponent } from './app.component';
 import { TransactionListComponent } from './components/transaction-list/transaction-list.component';
-import {HttpClientModule} from "@angular/common/http";
-import {TransactionService} from "./services/transaction.service";
+import { HttpClientModule } from "@angular/common/http";
+import { TransactionService } from "./services/transaction.service";
 import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
 import { NavbarComponent } from './components/navbar/navbar.component';
 import { SidebarComponent } from './components/sidebar/sidebar.component';

@@ -4,27 +4,37 @@
     "pageSidebar pageNavbar pageNavbar"
     "pageSidebar pageSection pageSection"
     "pageSidebar pageFooter pageFooter";
-  grid-template-rows: 80px 1fr 70px;
-  grid-template-columns: 20% 1fr 15%;
+  grid-template-rows: 50px 1fr 50px;
+  grid-template-columns: 10% 1fr 15%;
   grid-row-gap: 10px;
   grid-column-gap: 10px;
   height: 100vh;
   margin: 0;
 }
-.pageNavbar, .pageFooter, .pageSidebar, .pageFooter {
+.pageNavbar, .pageFooter, .pageSidebar, .pageFooter, .pageSection {
   padding: 1.2em;
 }
 .pageNavbar {
   grid-area: pageNavbar;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: flex-end;
+  align-items: center;
+  align-content: flex-start;
+  padding-right: 1.6em;
 }
 .pageFooter {
   grid-area: pageFooter;
+  background-color: #333333;
 }
 .pageSection {
   grid-area: pageSection;
+  background-color: #333333;
 }
 .pageSidebar {
   grid-area: pageSidebar;
+  background-color: #333333;
 }
 
 /* Stack the layout on small devices/viewports. */
