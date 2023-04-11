@@ -28,6 +28,10 @@
 .pageFooter {
   grid-area: pageFooter;
   padding: 1.2em;
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+
 }
 .pageSection {
   grid-area: pageSection;
