@@ -1,0 +1,53 @@
+.parent {
+  display: grid;
+  grid-template-areas:
+    "pageSidebar pageNavbar pageNavbar"
+    "pageSidebar pageSection pageSection"
+    "pageSidebar pageFooter pageFooter";
+  grid-template-rows: 80px 1fr 70px;
+  grid-template-columns: 20% 1fr 15%;
+  grid-row-gap: 10px;
+  grid-column-gap: 10px;
+  height: 100vh;
+  margin: 0;
+}
+.pageNavbar, .pageFooter, .pageSidebar, .pageFooter {
+  padding: 1.2em;
+}
+.pageNavbar {
+  grid-area: pageNavbar;
+}
+.pageFooter {
+  grid-area: pageFooter;
+}
+.pageSection {
+  grid-area: pageSection;
+}
+.pageSidebar {
+  grid-area: pageSidebar;
+}
+
+/* Stack the layout on small devices/viewports. */
+@media all and (max-width: 575px) {
+  body {
+    grid-template-areas:
+      "pageNavbar"
+      "pageSection"
+      "pageSidebar"
+      "pageFooter";
+    grid-template-rows: 80px 1fr 70px 1fr 70px;
+    grid-template-columns: 1fr;
+  }
+}
+
+@media screen and (max-width: 767px) {
+  .parent {
+    grid-template-areas:
+      "pageNavbar"
+      "pageSidebar"
+      "pageSection"
+      "pageFooter";
+    grid-template-rows: 80px 70px 1fr 70px;
+    grid-template-columns: 1fr;
+  }
+}
