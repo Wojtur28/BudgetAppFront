@@ -12,7 +12,7 @@
   margin: 0;
 }
 .pageNavbar, .pageFooter, .pageSidebar, .pageFooter, .pageSection {
-  padding: 1.2em;
+
 }
 .pageNavbar {
   grid-area: pageNavbar;
@@ -23,18 +23,25 @@
   align-items: center;
   align-content: flex-start;
   padding-right: 1.6em;
+  padding-top: 1.1em;
 }
 .pageFooter {
   grid-area: pageFooter;
-  background-color: #333333;
+  padding: 1.2em;
 }
 .pageSection {
   grid-area: pageSection;
-  background-color: #333333;
+  background-color: #212529;
+  padding: 1.2em;
 }
 .pageSidebar {
   grid-area: pageSidebar;
-  background-color: #333333;
+  display: flex;
+  flex-direction: column;
+  background-color: #f5365c;
+  margin: .7em;
+  overflow: hidden;
+
 }
 
 /* Stack the layout on small devices/viewports. */
